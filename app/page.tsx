@@ -1,12 +1,26 @@
+import AgenceButtonsSection from "./home/AgenceButtonsSection";
+import FaciliteSection from "./home/FaciliteSection";
+import Features from "./home/Features";
+import FonctionnementPlateforme from "./home/FonctionnementPlateforme";
+import Footer from "./home/Footer";
+import HeroSection from "./home/HeroSection";
+import Navbar from "./home/Navbar";
+import NewsletterSection from "./home/NewsletterSection";
+import ReseauSection from "./home/ReseauSection";
+import SocialSection from "./home/SocialSection";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold text-blue-600">
-        Bienvenue dans Next.js + Tailwind !
-      </h1>
-      <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-        Cliquez ici
-      </button>
+      <Navbar/>
+      <HeroSection/>
+      <AgenceButtonsSection/>
+      <ReseauSection/>
+      <FaciliteSection/>
+      <SocialSection/>
+      <Features/>
+     <NewsletterSection/>
+     <Footer/>
     </main>
   )
 }
